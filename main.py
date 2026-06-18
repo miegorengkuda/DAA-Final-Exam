@@ -48,6 +48,40 @@ def kahn_topological_sort(courses):
 
     return semesters
 
+def dfs_topological_sort(courses):
+    graph = build_graph(courses)
+
+    UNVISITED = 0
+    VISITING = 1
+    VISITED = 2
+
+    state = {course: UNVISITED for course in courses}
+
+    result = []
+
+    def dfs(course):
+        if state[course] == VISITING:
+            raise ValueError("Cycle detected")
+
+        if state[course] == VISITED:
+            return
+
+        state[course] = VISITING
+
+        for neighbor in graph[course]:
+            dfs(neighbor)
+
+        state[course] = VISITED
+        result.append(course)
+
+    for course in courses:
+        if state[course] == UNVISITED:
+            dfs(course)
+
+    result.reverse()
+
+    return result
+
 def main():
     with open('courses.json', 'r') as file:
         courses = json.load(file)
