@@ -1,0 +1,14 @@
+{
+    "C1": {
+        "name": "Calculus 1",
+        "mandatory": true,
+        "department": "general",
+        "credits": 3
+    },
+    "C2": {
+        "name": "Calculus 2",
+        "mandatory": true,
+        "department": "general",
+        "credits": 3
+    }
+}
