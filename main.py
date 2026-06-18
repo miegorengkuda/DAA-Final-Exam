@@ -7,7 +7,7 @@ def get_courses_by_department(courses, department):
 def build_graph(courses):
     pass
 
-def kahn_semesters(courses):
+def kahn_topological_sort(courses):
     graph = build_graph(courses)
 
     indegree = {course: 0 for course in courses}
