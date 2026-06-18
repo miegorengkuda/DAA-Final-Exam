@@ -1,14 +1,14 @@
 import json
 from collections import defaultdict, deque
 
-def getCourseByDepartment(courses, department):
+def get_courses_by_department(courses, department):
     return [course for course in courses if course.get('department') == department]
 
-def buildGraph(courses):
+def build_graph(courses):
     pass
 
 def kahn_semesters(courses):
-    graph = buildGraph(courses)
+    graph = build_graph(courses)
 
     indegree = {course: 0 for course in courses}
 
