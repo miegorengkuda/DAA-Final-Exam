@@ -3,12 +3,151 @@
         "name": "Calculus 1",
         "mandatory": true,
         "department": "general",
-        "credits": 3
+        "credits": 3,
+        "prerequisites": []
     },
     "C2": {
         "name": "Calculus 2",
         "mandatory": true,
         "department": "general",
-        "credits": 3
+        "credits": 3,
+        "prerequisites": ["C1"]
+    },
+    "P1": {
+        "name": "Physics 1",
+        "mandatory": true,
+        "department": "general",
+        "credits": 3,
+        "prerequisites": []
+    },
+    "P2": {
+        "name": "Physics 2",
+        "mandatory": true,
+        "department": "general",
+        "credits": 3,
+        "prerequisites": ["P1"]
+    },
+    "DS1": {
+        "name": "Discrete Mathematics",
+        "mandatory": true,
+        "department": "general",
+        "credits": 3,
+        "prerequisites": []
+    },
+
+    "CS101": {
+        "name": "Introduction to Programming",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": []
+    },
+    "CS102": {
+        "name": "Object-Oriented Programming",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS101"]
+    },
+    "CS201": {
+        "name": "Data Structures",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS102"]
+    },
+    "CS202": {
+        "name": "Algorithms",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS201", "DS1"]
+    },
+    "CS301": {
+        "name": "Operating Systems",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS201"]
+    },
+    "CS302": {
+        "name": "Database Systems",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS201"]
+    },
+    "CS401": {
+        "name": "Software Engineering",
+        "mandatory": true,
+        "department": "computer_science",
+        "credits": 4,
+        "prerequisites": ["CS301", "CS302"]
+    },
+
+    "IT101": {
+        "name": "Computer Networks Fundamentals",
+        "mandatory": true,
+        "department": "information_technology",
+        "credits": 4,
+        "prerequisites": ["CS101"]
+    },
+    "IT201": {
+        "name": "Network Administration",
+        "mandatory": true,
+        "department": "information_technology",
+        "credits": 4,
+        "prerequisites": ["IT101"]
+    },
+    "IT301": {
+        "name": "Cloud Computing",
+        "mandatory": true,
+        "department": "information_technology",
+        "credits": 4,
+        "prerequisites": ["IT201"]
+    },
+
+    "IS101": {
+        "name": "Introduction to Information Systems",
+        "mandatory": true,
+        "department": "information_systems",
+        "credits": 3,
+        "prerequisites": []
+    },
+    "IS201": {
+        "name": "Business Process Analysis",
+        "mandatory": true,
+        "department": "information_systems",
+        "credits": 3,
+        "prerequisites": ["IS101"]
+    },
+    "IS301": {
+        "name": "Enterprise Systems",
+        "mandatory": true,
+        "department": "information_systems",
+        "credits": 3,
+        "prerequisites": ["IS201", "CS302"]
+    },
+
+    "CE101": {
+        "name": "Digital Logic Design",
+        "mandatory": true,
+        "department": "computer_engineering",
+        "credits": 4,
+        "prerequisites": []
+    },
+    "CE201": {
+        "name": "Computer Organization",
+        "mandatory": true,
+        "department": "computer_engineering",
+        "credits": 4,
+        "prerequisites": ["CE101"]
+    },
+    "CE301": {
+        "name": "Embedded Systems",
+        "mandatory": true,
+        "department": "computer_engineering",
+        "credits": 4,
+        "prerequisites": ["CE201"]
     }
 }
